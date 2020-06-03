@@ -1,0 +1,223 @@
+@font-face {
+  font-family: arialnarrow;
+  src: url(assets/ArialNarrow.ttf);
+}
+body {
+  font-family: arialnarrow;
+  font-size: 100px;
+  line-height: 90px;
+  letter-spacing: 2px;
+}
+
+#cursor {
+  animation: blinker 1s step-end infinite;
+  //you can change 'step-end' to 'linear' for smooth transition
+}
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
+#container {
+  width: 80%;
+  padding: 0px;
+  margin: 50px auto;
+  margin-top: 25vh;
+  margin-bottom: 25vh;
+  word-wrap: break-word;
+  text-align:center;
+  z-index: 100;
+  background-color: inherit;
+}
+
+#images{
+  width: 500px;
+  height: auto;
+  margin: 50px auto;
+  background-color: red;
+}
+
+.inner {
+  /*display:block;*/
+  z-index: 2;
+}
+
+.rotatepos{
+  transform: rotate(5deg);
+}
+
+.rotateneg{
+  transform: rotate(-5deg);
+}
+
+.unrotate{
+  transform: none;
+}
+
+.backgroundblue{
+  background-color: #D0EAFF;
+}
+
+.backgroundpink{
+  background-color: #FFCCCC;
+}
+
+.backgroundpurple{
+  background-color: #E2CCFF;
+}
+
+.backgroundgreen{
+  background-color: #00FF29;
+}
+
+.backgroundyellow{
+  background-color: #FFFDCC;
+}
+
+.backgroundorange{
+  background-color: #FFCF9C;
+}
+
+.fontpurple{
+  color: #8D00FF;
+}
+
+@font-face {
+  font-family: fontarizonia;
+  src: url(assets/Arizonia-Regular.ttf);
+}
+.fontarizonia{
+  font-family: fontarizonia;
+}
+
+@font-face {
+  font-family: disney;
+  src: url(assets/waltograph42.otf);
+}
+.fontdisney{
+  font-family: disney;
+}
+
+@font-face {
+  font-family: lyno;
+  src: url(assets/LyonJean.otf);
+}
+.fontlyno{
+  font-family: lyno;
+}
+
+@font-face {
+  font-family: fontmcdonalds;
+  src: url(assets/mclawsui.ttf);
+}
+.fontmcdonalds{
+  font-family: fontmcdonalds;
+}
+
+@font-face {
+  font-family: vtf;
+  src: url(assets/VTF_Mixo.otf);
+}
+.fontvtf{
+  font-family: vtf;
+}
+
+@font-face {
+  font-family: logos;
+  src: url(assets/logos.ttf);
+}
+.fontlogo{
+  font-family: logos;
+}
+
+@font-face {
+  font-family: fashionlogo;
+  src: url(assets/clothinglogos.ttf);
+}
+.fontflogo{
+  font-family: fashionlogo;
+}
+
+@font-face {
+  font-family: fontterminalg;
+  src: url(assets/terminal-grotesque_open.otf);
+}
+.fontterminalg{
+  font-family: fontterminalg;
+  font-size: 110px;
+}
+
+@font-face {
+  font-family: walt;
+  src: url(assets/LyonWalt.otf);
+}
+.fontwalt{
+  font-family: walt;
+  font-size: 88px;
+}
+
+@font-face {
+  font-family: nasa;
+  src: url(assets/nasalization-rg.ttf);
+}
+.fontnasa{
+  font-family: nasa;
+}
+
+@font-face {
+  font-family: ferrari;
+  src: url(assets/FerroRosso.ttf);
+}
+.fontferrari{
+  font-family: ferrari;
+}
+
+.box{
+  background-color: red;
+  height: 100%
+  width:100%;
+  display: inline-block;
+}
+
+@font-face {
+  font-family: chineseny;
+  src: url(assets/chinesenewyear.ttf);
+}
+.fontchineseny{
+  font-family: chineseny;
+  font-size: 120px;
+}
+
+@font-face {
+  font-family: fontopen;
+  src: url(assets/openlogos.ttf);
+}
+.fontopen{
+  font-family: fontopen;
+}
+
+img{
+  position: absolute;
+}
+
+button{
+  margin: 0 auto;
+  font-family: arialnarrow;
+  font-size: 12px;
+  background-color: inherit;
+  text-align: center;
+  text-decoration: none;
+  margin: 50px -75px;
+  position: absolute;
+  top: 83vh;
+  left:50%;
+}
+
+@media print
+{
+    button{
+      display:none;
+    }
+    @page {
+        size: landscape;
+    }
+}
